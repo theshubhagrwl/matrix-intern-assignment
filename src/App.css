@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background: #0f101c;
+  color: white;
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+header {
+  background: #1c1d39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 18px 72px;
+  position: relative;
+  width: 100%;
+}
+header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 23px;
+  cursor: pointer;
+}
+/* header div:nth-child(1) img {
+} */
+header div:nth-child(1) span {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  color: white;
+}
+header div:nth-child(2) {
+  position: absolute;
+  right: 72px;
+}
+header div:nth-child(2) button {
+  width: 184px;
+  height: 44px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+header div:nth-child(2) button:nth-child(1) {
+  background: transparent;
+  border: 2px solid #00c88c;
+}
+header div:nth-child(2) button:nth-child(2) {
+  background: #00c88c;
+  border: none;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .leftBox {
+  width: 50%;
+  padding: 54px 58px 0 86px;
+}
+section .leftBox h1 {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+section .leftBox h1 span {
+  color: #00c88c;
+}
+section .leftBox p {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
+section .leftBox .cardsContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section .leftBox .cardsContent .cards {
+  background: #1c1d39;
+  width: 279px;
+  height: 104px;
+  padding: 11px 16px;
+  box-shadow: 5px 5px 6px -19px #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+}
+section .leftBox .cardsContent .cards span {
+  color: #00c88c;
+  font-size: 32px;
+  font-weight: 500;
+}
+section .rightBox {
+  width: auto;
+  padding: 54px 68px 0 58px;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .rightBox .cardsContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+section .rightBox .cardsContent .cards {
+  background: #1c1d39;
+  width: 292px;
+  height: 104px;
+  padding: 11px 16px;
+  box-shadow: 5px 5px 6px -19px #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+}
+section .rightBox .cardsContent .cards:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+section .rightBox .cardsContent .cards:nth-child(2) {
+  border-top-right-radius: 10px;
+}
+section .rightBox .cardsContent .cards span {
+  color: #00c88c;
+  font-size: 32px;
+  font-weight: 500;
+}
+section .rightBox .controlBox {
+  height: 600px;
+  width: 598px;
+  background: #1c1d39;
+  margin-top: 20px;
+  padding: 26px 39px 0px 26px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+}
+section .rightBox .controlBox table {
+  width: 100%;
+  border: none;
+}
+section .rightBox .controlBox table tr {
+  height: 40px;
+  width: 100%;
+}
+section .rightBox .controlBox table tr td {
+  /* border:2px solid red; */
+  border: none;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffffee;
+}
+section .rightBox .controlBox table tr td:nth-child(2) {
+  text-align: right;
+}
+section .rightBox .controlBox table tr:nth-child(7) {
+  height: 27px;
+}
+section .rightBox .controlBox table tr:nth-child(7) td {
+  background: #d9d9d920;
+  border-radius: 50px;
+  width: 100%;
+}
+section .rightBox .controlBox table tr:nth-child(7) td div {
+  background: #00c88c;
+  height: 27px;
+  border-radius: 50px 0 0 50px;
+  width: 45%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  font-weight: 500;
+}
+section .rightBox .controlBox table tr:nth-child(9) td {
+  width: 100%;
+  height: 40px;
+}
+section .rightBox .controlBox table tr:nth-child(9) td input[type="text"] {
+  width: 75%;
+  height: 100%;
+  background: #d9d9d920;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+section
+  .rightBox
+  .controlBox
+  table
+  tr:nth-child(9)
+  td
+  input[type="text"]::placeholder {
+  color: #ffffff;
+}
+section .rightBox .controlBox table tr:nth-child(9) td input[type="submit"] {
+  width: 25%;
+  height: 100%;
+  color: black;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+section .rightBox .controlBox .cardsBtn {
+  margin-top: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+section .rightBox .controlBox .cardsBtn .cardBtn {
+  width: 45%;
+  border-radius: 10px;
+  height: 37px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section .rightBox .controlBox .withdrawBtn {
+  width: 94%;
+  background: #ff0000;
+  height: 37px;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 18px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.cardsBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
