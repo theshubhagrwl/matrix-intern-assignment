@@ -259,3 +259,9 @@ section .rightBox .controlBox .withdrawBtn {
   align-items: center;
   justify-content: center;
 }
+
+.walletAddress {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

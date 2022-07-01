@@ -1,6 +1,26 @@
+import { ethers } from "ethers";
+import { useState } from "react";
 import "./App.css";
 import logo from "./logo.png";
-function App() {
+
+const App = () => {
+  const [walletAddress, setWalletAddress] = useState(null);
+
+  const connectWallet = async () => {
+    console.log("chal raha hai btn");
+
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+      const account = await provider.send("eth_requestAccounts", []);
+      console.log(account);
+      setWalletAddress(account);
+      // const signer = provider.getSigner();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="App">
       <header>
@@ -10,7 +30,7 @@ function App() {
         </div>
         <div>
           <button>website</button>
-          <button>connect</button>
+          <button onClick={connectWallet}>connect</button>
         </div>
       </header>
 
@@ -56,7 +76,11 @@ function App() {
             <table>
               <tr>
                 <td>Your Wallet Address</td>
-                <td>0x8D3f...9833</td>
+                <td>
+                  <div className="walletAddress" title={walletAddress}>
+                    {walletAddress ? walletAddress : "Connect Wallet"}
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Total Stakable Token</td>
@@ -104,6 +128,6 @@ function App() {
       </section>
     </div>
   );
-}
+};
 
 export default App;
